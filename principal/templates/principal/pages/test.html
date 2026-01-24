@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="pt-BR" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevStreamer Portfolio</title>
+ 
+ </head>
+ <body class="h-full">
+  <div class="app-wrapper"><!-- ========================================
+             HEADER
+             ======================================== -->
+   <header>
+    <nav>
+     <div class="logo">
+      DevStreamer
+     </div>
+     <ul class="nav-links" id="navLinks">
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#trabalhos">Trabalhos</a></li>
+      <li><a href="#parceiros">Parceiros</a></li>
+      <li><a href="#contato">Contato</a></li>
+     </ul><button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu"> <span></span> <span></span> <span></span> </button>
+    </nav>
+   </header><!-- ========================================
+             HERO SECTION
+             ======================================== -->
+   <section class="hero" id="hero">
+    <div class="hero-content"><span class="hero-badge" id="heroBadge">🎮 Developer &amp; Streamer</span>
+     <h1 id="heroTitle">Criando <span class="highlight">experiências digitais</span> únicas</h1>
+     <p id="heroDescription">Desenvolvedor apaixonado por código e criação de conteúdo. Transformando ideias em projetos inovadores, uma linha de código por vez.</p>
+     <div class="cta-buttons"><a href="#projetos" class="btn-primary" id="ctaButton">Ver Projetos</a> <a href="#contato" class="btn-secondary">Entrar em Contato</a>
+     </div>
+    </div>
+   </section><!-- ========================================
+             PROJECTS SECTION
+             ======================================== -->
+   <section id="projetos">
+    <div class="section-header">
+     <h2 id="projectsTitle">Projetos</h2>
+     <p>Alguns dos meus trabalhos mais recentes e relevantes</p>
+    </div>
+    <div class="projects-grid">
+     <div class="project-card">
+      <div class="project-icon">
+       🚀
+      </div>
+      <h3>Stream Dashboard</h3>
+      <p>Painel de controle completo para streamers com estatísticas em tempo real e integrações com múltiplas plataformas.</p>
+      <div class="tech-tags"><span class="tech-tag">React</span> <span class="tech-tag">Node.js</span> <span class="tech-tag">WebSocket</span>
+      </div>
+     </div>
+     <div class="project-card">
+      <div class="project-icon">
+       🎨
+      </div>
+      <h3>Creative Tools</h3>
+      <p>Suite de ferramentas criativas para designers e desenvolvedores, incluindo geradores e conversores automáticos.</p>
+      <div class="tech-tags"><span class="tech-tag">TypeScript</span> <span class="tech-tag">Canvas API</span> <span class="tech-tag">PWA</span>
+      </div>
+     </div>
+     <div class="project-card">
+      <div class="project-icon">
+       🤖
+      </div>
+      <h3>Bot Interativo</h3>
+      <p>Bot para chat com comandos personalizados, minigames e sistema de pontos para engajamento da comunidade.</p>
+      <div class="tech-tags"><span class="tech-tag">Python</span> <span class="tech-tag">API REST</span> <span class="tech-tag">MongoDB</span>
+      </div>
+     </div>
+    </div>
+   </section><!-- ========================================
+             WORK/SERVICES SECTION
+             ======================================== -->
+   <section id="trabalhos">
+    <div class="section-header">
+     <h2 id="workTitle">Trabalhos</h2>
+     <p>Serviços e especialidades que ofereço</p>
+    </div>
+    <div class="work-grid">
+     <div class="work-item">
+      <div class="work-icon">
+       💻
+      </div>
+      <h3>Desenvolvimento Web</h3>
+      <p>Sites e aplicações web modernas, responsivas e otimizadas para performance.</p>
+     </div>
+     <div class="work-item">
+      <div class="work-icon">
+       🎬
+      </div>
+      <h3>Criação de Conteúdo</h3>
+      <p>Lives, vídeos e tutoriais sobre tecnologia, programação e games.</p>
+     </div>
+     <div class="work-item">
+      <div class="work-icon">
+       ⚡
+      </div>
+      <h3>Automações</h3>
+      <p>Bots, scripts e ferramentas para otimizar processos e workflows.</p>
+     </div>
+     <div class="work-item">
+      <div class="work-icon">
+       🎯
+      </div>
+      <h3>Consultoria Tech</h3>
+      <p>Orientação técnica para projetos, escolha de tecnologias e arquitetura.</p>
+     </div>
+    </div>
+   </section><!-- ========================================
+             PARTNERS SECTION
+             ======================================== -->
+   <section id="parceiros">
+    <div class="section-header">
+     <h2 id="partnersTitle">Parceiros</h2>
+     <p>Marcas e empresas que confiam no meu trabalho</p>
+    </div>
+    <div class="partners-grid">
+     <div class="partner-item"><span class="partner-logo">TechCorp</span>
+     </div>
+     <div class="partner-item"><span class="partner-logo">GameStudio</span>
+     </div>
+     <div class="partner-item"><span class="partner-logo">StreamLabs</span>
+     </div>
+     <div class="partner-item"><span class="partner-logo">CodeAcademy</span>
+     </div>
+     <div class="partner-item"><span class="partner-logo">DevCommunity</span>
+     </div>
+     <div class="partner-item"><span class="partner-logo">CloudHost</span>
+     </div>
+    </div>
+   </section><!-- ========================================
+             CONTACT SECTION
+             ======================================== -->
+   <section id="contato">
+    <div class="section-header">
+     <h2 id="contactTitle">Contato</h2>
+     <p>Vamos conversar sobre seu próximo projeto</p>
+    </div>
+    <div class="contact-container">
+     <form class="contact-form" id="contactForm">
+      <div class="form-group"><label for="name">Nome</label> <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+      </div>
+      <div class="form-group"><label for="email">Email</label> <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+      </div>
+      <div class="form-group"><label for="message">Mensagem</label> <textarea id="message" name="message" placeholder="Conte-me sobre seu projeto..." required></textarea>
+      </div><button type="submit" class="submit-btn">Enviar Mensagem</button>
+     </form>
+     <div class="form-success" id="formSuccess">
+      <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">✨ Mensagem Enviada!</h3>
+      <p>Obrigado pelo contato. Responderei em breve!</p>
+     </div>
+    </div>
+   </section><!-- ========================================
+             FOOTER
+             ======================================== -->
+   <footer>
+    <div class="footer-content">
+     <div class="footer-name" id="footerName">
+      DevStreamer
+     </div>
+     <div class="social-links"><a href="#" class="social-link" aria-label="GitHub">
+       <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+       </svg></a> <a href="#" class="social-link" aria-label="Twitter">
+       <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+       </svg></a> <a href="#" class="social-link" aria-label="Twitch">
+       <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714z" />
+       </svg></a> <a href="#" class="social-link" aria-label="YouTube">
+       <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+       </svg></a> <a href="#" class="social-link" aria-label="Discord">
+       <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
+       </svg></a>
+     </div>
+     <p class="footer-copyright">© 2024 DevStreamer. Todos os direitos reservados.</p>
+    </div>
+   </footer>
+  </div>
+  <script>
+        // ========================================
+        // Default Configuration
+        // ========================================
+        const defaultConfig = {
+            hero_title: 'Criando experiências digitais únicas',
+            hero_subtitle: 'Developer & Streamer',
+            hero_description: 'Desenvolvedor apaixonado por código e criação de conteúdo. Transformando ideias em projetos inovadores, uma linha de código por vez.',
+            cta_button_text: 'Ver Projetos',
+            projects_title: 'Projetos',
+            work_title: 'Trabalhos',
+            partners_title: 'Parceiros',
+            contact_title: 'Contato',
+            footer_name: 'DevStreamer',
+            primary_color: '#5dfdcb',
+            secondary_color: '#7d53de',
+            background_color: '#001929',
+            text_color: '#c3c3e6',
+            accent_color: '#4ea5d9',
+            font_family: 'REM',
+            font_size: 16
+        };
+
+        let config = { ...defaultConfig };
+
+        // ========================================
+        // Mobile Menu Toggle
+        // ========================================
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // ========================================
+        // Contact Form Handling
+        // ========================================
+        const contactForm = document.getElementById('contactForm');
+        const formSuccess = document.getElementById('formSuccess');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Simulate form submission
+            contactForm.style.display = 'none';
+            formSuccess.classList.add('show');
+            
+            // Reset form after 5 seconds
+            setTimeout(() => {
+                contactForm.reset();
+                contactForm.style.display = 'block';
+                formSuccess.classList.remove('show');
+            }, 5000);
+        });
+
+        // ========================================
+        // Smooth Scroll for Navigation
+        // ========================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // ========================================
+        // Config Change Handler - Updates UI
+        // ========================================
+        async function onConfigChange(newConfig) {
+            config = { ...defaultConfig, ...newConfig };
+            
+            // Update hero section
+            const heroTitle = document.getElementById('heroTitle');
+            const titleText = config.hero_title || defaultConfig.hero_title;
+            const words = titleText.split(' ');
+            if (words.length > 2) {
+                const highlightWords = words.slice(1, 3).join(' ');
+                const restWords = words.slice(3).join(' ');
+                heroTitle.innerHTML = `${words[0]} <span class="highlight">${highlightWords}</span> ${restWords}`;
+            } else {
+                heroTitle.textContent = titleText;
+            }
+            
+            document.getElementById('heroBadge').textContent = `🎮 ${config.hero_subtitle || defaultConfig.hero_subtitle}`;
+            document.getElementById('heroDescription').textContent = config.hero_description || defaultConfig.hero_description;
+            document.getElementById('ctaButton').textContent = config.cta_button_text || defaultConfig.cta_button_text;
+            
+            // Update section titles
+            document.getElementById('projectsTitle').textContent = config.projects_title || defaultConfig.projects_title;
+            document.getElementById('workTitle').textContent = config.work_title || defaultConfig.work_title;
+            document.getElementById('partnersTitle').textContent = config.partners_title || defaultConfig.partners_title;
+            document.getElementById('contactTitle').textContent = config.contact_title || defaultConfig.contact_title;
+            
+            // Update footer
+            document.getElementById('footerName').textContent = config.footer_name || defaultConfig.footer_name;
+            
+            // Update colors via CSS variables
+            const root = document.documentElement;
+            root.style.setProperty('--aquamarine', config.primary_color || defaultConfig.primary_color);
+            root.style.setProperty('--slate-blue', config.secondary_color || defaultConfig.secondary_color);
+            root.style.setProperty('--ink-black', config.background_color || defaultConfig.background_color);
+            root.style.setProperty('--periwinkle', config.text_color || defaultConfig.text_color);
+            root.style.setProperty('--fresh-sky', config.accent_color || defaultConfig.accent_color);
+            
+            // Update font
+            const fontFamily = config.font_family || defaultConfig.font_family;
+            root.style.setProperty('--font-family', `'${fontFamily}', sans-serif`);
+            
+            // Update font size proportionally
+            const baseSize = config.font_size || defaultConfig.font_size;
+            document.body.style.fontSize = `${baseSize}px`;
+        }
+
+        // ========================================
+        // Map Config to Capabilities
+        // ========================================
+        function mapToCapabilities(config) {
+            return {
+                recolorables: [
+                    {
+                        get: () => config.background_color || defaultConfig.background_color,
+                        set: (value) => {
+                            config.background_color = value;
+                            window.elementSdk.setConfig({ background_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.text_color || defaultConfig.text_color,
+                        set: (value) => {
+                            config.text_color = value;
+                            window.elementSdk.setConfig({ text_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.primary_color || defaultConfig.primary_color,
+                        set: (value) => {
+                            config.primary_color = value;
+                            window.elementSdk.setConfig({ primary_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.secondary_color || defaultConfig.secondary_color,
+                        set: (value) => {
+                            config.secondary_color = value;
+                            window.elementSdk.setConfig({ secondary_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.accent_color || defaultConfig.accent_color,
+                        set: (value) => {
+                            config.accent_color = value;
+                            window.elementSdk.setConfig({ accent_color: value });
+                        }
+                    }
+                ],
+                borderables: [],
+                fontEditable: {
+                    get: () => config.font_family || defaultConfig.font_family,
+                    set: (value) => {
+                        config.font_family = value;
+                        window.elementSdk.setConfig({ font_family: value });
+                    }
+                },
+                fontSizeable: {
+                    get: () => config.font_size || defaultConfig.font_size,
+                    set: (value) => {
+                        config.font_size = value;
+                        window.elementSdk.setConfig({ font_size: value });
+                    }
+                }
+            };
+        }
+
+        // ========================================
+        // Map Config to Edit Panel Values
+        // ========================================
+        function mapToEditPanelValues(config) {
+            return new Map([
+                ['hero_title', config.hero_title || defaultConfig.hero_title],
+                ['hero_subtitle', config.hero_subtitle || defaultConfig.hero_subtitle],
+                ['hero_description', config.hero_description || defaultConfig.hero_description],
+                ['cta_button_text', config.cta_button_text || defaultConfig.cta_button_text],
+                ['projects_title', config.projects_title || defaultConfig.projects_title],
+                ['work_title', config.work_title || defaultConfig.work_title],
+                ['partners_title', config.partners_title || defaultConfig.partners_title],
+                ['contact_title', config.contact_title || defaultConfig.contact_title],
+                ['footer_name', config.footer_name || defaultConfig.footer_name]
+            ]);
+        }
+
+        // ========================================
+        // Initialize Element SDK
+        // ========================================
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                onConfigChange,
+                mapToCapabilities,
+                mapToEditPanelValues
+            });
+        }
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c1f66b2d6ed07de',t:'MTc2OTA4ODU3Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

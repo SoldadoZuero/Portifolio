@@ -1,0 +1,58 @@
+#cloud-config
+autoinstall:
+  version: 1
+  identity:
+    hostname: xubuntu-pc
+    username: wow
+    password: "6dd1491d34b4797027ffc655abbd6603f513a59826ffaf4e45eafa060018e98cbdd8f505ccabaeab1b75f85d128f8c2f744ceb5694b412ab145aa62788607c10"   # senha criptografada em SHA-512
+  locale: pt_BR
+  keyboard:
+    layout: br
+    variant: abnt2
+  timezone: America/Sao_Paulo
+  packages:
+    - vim
+    - curl
+    - htop
+    - xubuntu-desktop
+    - libreoffice
+    - traceroute
+    - wine
+  
+  late-commands:
+    - curtin in-target --target=/target -- apt-get update
+    - curtin in-target -- apt-get install -y wget gnupg
+
+    # Google Chrome
+    - curtin in-target -- wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
+    - curtin in-target -- sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'
+    - curtin in-target -- apt-get update
+    - curtin in-target -- apt-get install -y google-chrome-stable
+
+    # AnyDesk
+    - curtin in-target -- wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
+    - curtin in-target -- sh -c 'echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk.list'
+    - curtin in-target -- apt-get update
+    - curtin in-target -- apt-get install -y anydesk
+
+    # Zoiper (não tem repositório oficial, geralmente é baixado .deb)
+    - curtin in-target -- wget https://www.zoiper.com/en/voip-softphone/download/zoiper5/for/linux-deb -O /tmp/zoiper.deb
+    - curtin in-target -- apt-get install -y /tmp/zoiper.deb
+
+    - curtin in-target -- bash -c 'hostnamectl set-hostname $(dmidecode -s system-product-name | tr " " "-" | tr "[:upper:]" "[:lower:]")'
+
+
+  storage:
+    layout:
+      name: direct
+  ssh:
+    install-server: true
+    authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQ...
+  apt:
+    preserve_sources_list: false
+    primary:
+      - arches: [amd64]
+        uri: http://archive.ubuntu.com/ubuntu
+        suite: focal
+        components: [main, universe]

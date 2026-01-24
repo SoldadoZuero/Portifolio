@@ -1,10 +1,8 @@
 {% extends 'global/base.html' %}
 {% block content %}
-    <div class="home_container">
-        <div class="home_gradient">
-            {% include 'principal/partials/home_intro.html' %}
-            {% include 'principal/partials/about_me.html' %}
-            {% include 'principal/partials/panels.html' %}
-        </div>
-    </div>
+    {% include 'principal/partials/landing.html' %}
+    {% include 'principal/partials/projects_lp.html' %}
+    {% include 'principal/partials/trabalhos_lp.html' %}
+    {% include 'principal/partials/partners_lp.html' %}
+    {% include 'principal/partials/contato_lp.html' %}
 {% endblock content %}
