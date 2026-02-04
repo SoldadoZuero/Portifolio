@@ -7,5 +7,5 @@ class PrincipalHome(TemplateView):
     template_name = 'principal/pages/home.html'
 
 
-class PrincipalProjects(TemplateView):
-    template_name = 'principal/pages/projects.html'
+class PrincipalBabyYodaStore(TemplateView):
+    template_name = 'principal/pages/BYS.html'

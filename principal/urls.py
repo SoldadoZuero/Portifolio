@@ -11,8 +11,8 @@ urlpatterns = [
         name="home"
     ),
     path(
-        'projects',
-        views.PrincipalProjects.as_view(),
-        name="projects"
+        'baby-yoda-store/',
+        views.PrincipalBabyYodaStore.as_view(),
+        name="baby-yoda-store"
     )
 ]

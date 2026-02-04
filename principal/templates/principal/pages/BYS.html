@@ -1,0 +1,77 @@
+{% extends 'global/base.html' %}
+{% block content %}
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <span class="hero-badge" id="heroBadge">🎨 Baby Yoda Store</span>
+            <h1 id="heroTitle">
+                Ajudando você com
+                <span class="highlight">identidades visuais</span> 
+                únicas
+            </h1>
+            <p id="heroDescription">
+                Trabalhamos em conjunto com você para criar um design 100% personalizado que reflita sua identidade.
+            </p>
+            <div class="cta-buttons">
+                <a href="#pacotes" class="btn-primary" id="ctaButton">Pacotes</a> 
+                <a href="#contato" class="btn-secondary">Entrar em Contato</a>
+            </div>
+        </div>
+    </section>
+    <section id="pacotes">
+        <div class="section-header">
+            <h2 id="projectsTitle">Pacotes</h2>
+            <p>Chegou a hora de transformar seu canal com designs personalizados que vão fazer você se destacar.</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon">
+                    ✨
+                </div>
+                <h3>Pacote Essencial</h3>
+                <p>
+                    Ideal para streamers que estão começando ou buscam um upgrade rápido e funcional 
+                    para dar um toque profissional ao seu ambiente de live sem complicação
+                </p>
+                <div class="tech-tags">
+                    <span class="tech-tag">1 Overlay de Chat</span> 
+                    <span class="tech-tag">1 Overlay de Webcam</span> 
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">
+                🚀
+                </div>
+                    <h3>Pacote Ascensão</h3>
+                    <p>
+                        Perfeito para streamers que já tem uma base e querem consolidar sua marca, 
+                        apresentando um visual coeso e profissional em todas as cenas transmissão e no perfil.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Pacote Essencial</span> 
+                        <span class="tech-tag">1 Logo Estático</span> 
+                        <span class="tech-tag">1 Banner de perfil / offline</span> 
+                        <span class="tech-tag">3 Emotes</span> 
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">
+                🍸
+                </div>
+                    <h3>Pacote Elite</h3>
+                    <p>
+                        Desenvolvido para streamers que buscam a experiência mais imersiva e profissional para sua audiência, 
+                        com um branding completo e todos os elementos visuais essenciais para uma live de ponta.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Pacote Ascensão</span> 
+                        <span class="tech-tag">1 Banner de inicio de live</span>
+                        <span class="tech-tag">1 Banner de fim de live</span>
+                        <span class="tech-tag">1 Banner de intervalo</span>
+                        <span class="tech-tag">5 Painéis personalizados</span>
+                        <span class="tech-tag">+2 emotes</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
