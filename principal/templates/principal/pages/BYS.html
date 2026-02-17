@@ -78,8 +78,13 @@
             <h2 id="projectsTitle">Comissão</h2>
             <p>Se você quer serviços específicos, monte aqui seu projeto sob medida.</p>
         </div>
-        <div class="contact-info">
-            <div>
+        <div class="contact-container">
+            <div class="contact-form">
+                <div class="cta-buttons">
+                    {% for i in servicos %}
+                        <button class="btn-primary">{{ i.titulo }} ➕</button>
+                    {% endfor %}
+                </div>
                 
             </div>
         </div>
