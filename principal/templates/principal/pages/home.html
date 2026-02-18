@@ -1,4 +1,5 @@
 {% extends 'global/base.html' %}
+{% block header %}<a href="{% url "principal:home" %}">SoldadoZuero</a>{% endblock header %}
 {% block content %}
     {% include 'principal/partials/landing.html' %}
     {% include 'principal/partials/projects_lp.html' %}

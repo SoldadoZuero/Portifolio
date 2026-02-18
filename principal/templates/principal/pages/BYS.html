@@ -1,4 +1,11 @@
 {% extends 'global/base.html' %}
+{% block header %}
+    <a href="{% url "principal:baby-yoda-store" %}">
+        Baby Yoda Store 
+        <span class="owner-logo">& SDZ</span>
+    </a>
+{% endblock header %}
+{% block title %}Baby Yoda Store |{% endblock title %}
 {% block content %}
     <section class="hero" id="hero">
         <div class="hero-content">

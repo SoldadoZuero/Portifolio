@@ -8,7 +8,24 @@
 </head>
 <body class="h-full">
     <div class="app-wrapper">
-        {% include 'global/partials/header.html' %}
+        <header>
+            <nav>
+                <div class="logo">
+                    {% block header %}{% endblock header %}
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="{% url "principal:home" %}#projetos">Projetos</a></li>
+                    <li><a href="{% url "principal:home" %}#trabalhos">Trabalhos</a></li>
+                    <li><a href="{% url "principal:home" %}#parceiros">Parceiros</a></li>
+                    <li><a href="{% url "principal:home" %}#contato">Contato</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu"> 
+                    <span></span> 
+                    <span></span> 
+                    <span></span> 
+                </button>
+            </nav>
+        </header>
         <main>
             {% block content %}{% endblock content %}
         </main>

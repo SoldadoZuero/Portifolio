@@ -119,6 +119,10 @@
         letter-spacing: -0.5px;
     }
 
+    .owner-logo{
+        font-size: x-small;
+    }
+
     .nav-links {
         display: flex;
         list-style: none;
